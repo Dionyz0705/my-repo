@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./resources/css/styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Visual Rules</title>
+</head>
+<body>
+    <h1>CSS Visual Rules</h1>
+    <h2>CSS declarations</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="name">CSS declarations</td>
+            <td>In CSS, a declaration is the key-value pair of a CSS property and its value.
+             CSS declarations are used to set style properties and construct rules to apply
+             to individual or groups of elements.
+             The property name and value are separated by a colon,
+             and the entire declaration must be terminated by a semi-colon.
+            </td>
+            <td class="example"><span class="comment">/*<br>
+                CSS declaration format:
+                property-name: value;<br>
+                */<br>
+                <br>
+                /*<br>
+                 CSS declarations<br>
+                 */<br></span>
+                <span>text-align</span>: center;<br>
+                <span>color</span>: purple;<br>
+                <span>width</span>: 100px;
+            </td>                   
+          </tr>        
+        </tbody>
+    </table>
+    <h2>CSS properties</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="name">Font Size</td>
+                <td>The font-size CSS property is used to set text sizes.
+                  Font size values can be many different units or types such as pixels.</td>
+                <td class="example"><span>font-size</span>: 30px;</td>
+            </tr>
+            <tr>
+                <td>Background Color</td>
+                <td>The background-color CSS property controls the background color of elements.</td>
+                <td class="example"><span>background-color</span>: blue;</td>
+            </tr>
+            <tr>
+                <td>!important Rule</td>
+                <td>The CSS !important rule is used on declarations
+                    to override any other declarations for a property
+                    and ignore selector specificity. !important rules will
+                    ensure that a specific declaration always applies to the matched elements.
+                    However, generally it is good to avoid using !important as bad practice.</td>
+                <td class="example">                      
+                    <span class="selector">.post-title</span> {<br>
+                    <span>&nbsp&nbspcolor</span>: blue !important;<br>
+                      }
+                </td>
+            </tr>
+            <tr>
+                <td>Opacity</td>
+                <td>The opacity CSS property can be used to control the transparency of an element.
+                    The value of this property ranges from 0 (transparent) to 1 (opaque).</td>
+                <td class="example"><span>opacity</span>: 0.5;</td>
+            </tr>
+            <tr>
+                <td>Font Weight</td>
+                <td>The font-weight CSS property can be used to set the weight (boldness) of text.
+                    The provided value can be a keyword such as bold or normal.                </td>                    
+                <td class="example"><span>font-weight</span>: bold;</td>
+            </tr>
+            <tr>
+                <td>Text Align</td>
+                <td>The text-align CSS property can be used to set the text alignment of inline contents.
+                    This property can be set to these values: left, right, or center.</td>
+                <td class="example"><span>text-align</span>: right;</td>
+            </tr>            
+        </tbody>
+    </table>
+    <h2>CSS Rule Sets</h2>    
+      <table>
+        <thead>            
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+          <tbody>
+            <tr>
+                <td class="name">CSS Rule Sets</td>
+                <td>A CSS rule set contains one or more selectors and one or more declarations.
+                    The selector(s), which in this example is h1, points to an HTML element.
+                    The declaration(s), which in this example are color: blue and text-align:
+                    center style the element with a property and value.
+                    The rule set is the main building block of a CSS sheet.</td>
+                <td class="example"><span class="selector">h1</span> {<br>
+                        <span>&nbsp&nbspcolor</span>: blue;<br>
+                        <span>&nbsp&nbsptext-align</span>: center;<br>
+                      }</td>    
+            </tr>
+            <tr>
+                <td>Setting foreground text color in CSS</td>
+                <td>Using the color property, foreground text color of an element can be set in CSS.
+                    The value can be a valid color name supported in CSS like green or blue. Also,
+                    3 digit or 6 digit color code like #22f or #2a2aff can be used to set the color.</td>
+                <td class="example"><span class="selector">p</span> {<br>
+                    <span>&nbsp&nbspcolor</span>: #2a2aff;<br>
+                    }<br>
+                    <br>                    
+                    <span class="selector">span</span> {<br>
+                    <span>&nbsp&nbspcolor</span>: green;<br>                                           
+                    }</td>    
+            </tr>
+            <tr>
+                <td>Resource URL</td>
+                <td>In CSS, the url() function is used to wrap resource URLs.
+                    These can be applied to several properties such as the background-image.</td>
+                <td class="example"><span class="url">background-image: url("../resources/image.png");</span></td>   
+            </tr>
+            <tr>
+                <td>Background Image</td>
+                <td>The background-image CSS property sets the background image of an element.
+                    An image URL should be provided in the syntax url("moon.jpg") as the value of the property.</td>
+                <td class="example"><span class="url">background-image: url("nyan-cat.gif");</span></td>    
+            </tr>
+            <tr>
+                <td>Font Family</td>
+                <td>The font-family CSS property is used to specify the typeface in a rule set.
+                    Fonts must be available to the browser to display correctly, either on the computer
+                    or linked as a web font. If a font value is not available, browsers will display their default font.
+                    When using a multi-word font name, it is best practice to wrap them in quotes.</td>
+                <td class="example"><span class="selector">h2</span> {<br>
+                      <span>&nbsp&nbspfont-family</span>: Verdana;<br>
+                      }<br>
+                      <br>
+                      <span class="selector">#page-title</span> {<br>
+                      <span>&nbsp&nbspfont-family</span>: "Courier New";<br>
+                      }</td>    
+            </tr>
+            <tr>
+                <td>Color Name Keywords</td>
+                <td>Color name keywords can be used to set color property values for elements in CSS.</td>
+                <td class="example"><span class="selector">h1</span> {<br>
+                    <span>&nbsp&nbspcolor</span>: aqua;<br>
+                  }<br>
+                  <br>                  
+                  <span class="selector">li</span> {<br>
+                    <span>&nbsp&nbspcolor</span>: khaki;<br>
+                  }</td>
+            </tr>
+          </tbody>
+        </table>         
+        
+</body>
+</html>
